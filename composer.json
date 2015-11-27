@@ -1,0 +1,22 @@
+{
+    "name": "mrself/laravel-helpers",
+    "description": "Helpers for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaroslav Vavrysh",
+            "email": "yaruk.my@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrself\\LaravelHelpers\\": "src/"
+        }
+    }
+}
