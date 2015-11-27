@@ -1,4 +1,4 @@
-<?php namespace App\LaravelHelpers;
+<?php namespace Mrself\LaravelHelpers;
 
 use Illuminate\Support\ServiceProvider;
 
