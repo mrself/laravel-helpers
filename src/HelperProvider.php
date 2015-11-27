@@ -21,7 +21,10 @@ class HelperProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		foreach (glob('{' . app_path() . ',' . __DIR__ . '}' . '/Helpers/*.php') as $filename) {
+		// dd('{' . app_path() . '/Helpers/*.php,' . __DIR__ . '/Helpers/*.php}');
+		// dd(glob("{D:\oserver\OpenServer\domains\yaform\app\**\*.php, d}", GLOB_BRACE));
+		// dd(array_merge(glob(app_path(). '/Helpers/*.php'), glob(__DIR__. '/Helpers/*.php')));
+		foreach (array_merge(glob(app_path(). '/Helpers/*.php'), glob(__DIR__. '/Helpers/*.php')) as $filename) {
 			require_once($filename);
 		}
 	}
